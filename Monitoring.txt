@@ -1,0 +1,30 @@
+Here’s how you can say this in a more detailed, natural way in the interview:
+
+---
+
+### **Answer:**
+
+For monitoring, even if it’s a minimal setup, I don’t skip it at all because without visibility, we are basically blind in production. My approach is to at least have basic logging and metrics in place from day one, and then improve it gradually.
+
+So first, I make sure we are capturing **application logs properly**. That includes things like request logs, error logs, and any important business-level logs. These logs help a lot during debugging when something breaks in production.
+
+Along with logs, I also focus on **basic system and application metrics**. At minimum, I want to track things like CPU usage, memory usage, and how the application is behaving under load.
+
+Now depending on the setup and timeline, I usually go with two approaches.
+
+The first is a **simple and quick setup**. If we are on AWS, I’ll use CloudWatch because it’s already integrated and easy to set up. We can push logs there, create basic alerts, and monitor system metrics without much effort.
+If not, I can also set up a basic ELK stack for centralized logging so that all logs are in one place and easy to search.
+
+The second approach is a **more structured and scalable setup**, where I use Prometheus and Grafana. Prometheus is used to collect metrics from the application and infrastructure, and Grafana helps in visualizing those metrics through dashboards.
+
+For example, I usually create dashboards to monitor:
+
+* CPU and memory usage of containers or servers
+* Application response time
+* Error rates or failed requests
+
+This helps not only in troubleshooting but also in identifying patterns, like if the system is slowly degrading or if we need scaling.
+
+In one of my projects, this kind of setup really helped us detect issues early. For example, we noticed increasing memory usage before it actually caused pod crashes, so we were able to fix it proactively instead of reacting after failure.
+
+So overall, my goal with monitoring is simple — **get visibility first, then improve it step by step**, so that the system becomes more stable and predictable over time.

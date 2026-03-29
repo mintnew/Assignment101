@@ -1,0 +1,16 @@
+{
+  "name": "travel-website",
+  "version": "1.0.0",
+  "description": "Colorful Travel Website Demo App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "echo \"No lint configured\"",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "author": "Saurabh",
+  "license": "ISC"
+}

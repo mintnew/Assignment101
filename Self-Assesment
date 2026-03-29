@@ -1,0 +1,11 @@
+Tool & Experience Self-Assessment
+
+| Tool/Area                                   | Rating (1–5) | Comments or Example Projects                                                                                                                ------------------------------------------------------------------------------------------------------------------------
+| CI/CD ( GitHub Actions, Jenkins, Azure Devops)       | 5            | I have worked on Jenkins and Azure DevOps pipelines for microservices-based applications. Automated build, test, security scans, and deployments. Helped reduce manual effort and improved release speed. |
+| Docker                                      | 5            | Used Docker for containerizing applications and integrating it with CI/CD pipelines. Created Dockerfiles, managed images, and used it regularly for deployments.                                          |
+| Kubernetes                                  | 4.5          | Worked on EKS and AKS clusters, handled deployments using Helm, managed scaling, and resolved production issues like pod crashes and resource problems.                                                   |
+| Terraform / Ansible                         | 4.5          | Used Terraform to provision infrastructure on AWS and Azure. Created reusable modules. Also used Ansible for basic configuration and automation tasks.                                                    |
+| AWS / GCP / Azure                           | 4.5          | Hands-on with AWS and Azure services like EKS, EC2, S3, AKS, and Azure DevOps. Worked in hybrid environments and handled deployment and monitoring setups.                                                |
+| Monitoring Tools (Prometheus, Grafana, ELK) | 4.5          | Used Prometheus and Grafana for metrics monitoring and dashboards. Used ELK stack for log management and troubleshooting production issues.                                                               |
+| Git                                         | 5            | Daily use of Git for version control, branching, pull requests, and integration with CI/CD pipelines.                                                                                                     |
+

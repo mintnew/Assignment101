@@ -29,4 +29,4 @@ jobs:
       - run: terraform init
       - run: terraform plan
       #- run: terraform apply -auto-approve
-      - run: destroy apply -auto-approve
+      - run: terraform destroy -auto-approve

@@ -1,0 +1,21 @@
+name: "working out"
+
+on:
+  push
+
+env:
+  GLOBAL_APP_ENV: global-dev
+
+jobs:
+  build:
+      runs-on: ubuntu-22.04
+
+      steps:
+        - name: Say Hello
+          run: echo "Hello from second pipeline"
+            
+        - name: Install
+          env:
+             APP_ENV: dev
+             DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          run: echo "Environment $APP_ENV using $DB_PASSWORD "

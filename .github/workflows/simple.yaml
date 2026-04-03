@@ -10,6 +10,9 @@ jobs:
   build:
       runs-on: ubuntu-22.04
 
+      env:
+        JOB_LEVEL_ENV: job-dev
+
       steps:
         - name: Say Hello
           run: echo "Hello from second pipeline"
@@ -18,4 +21,4 @@ jobs:
           env:
              APP_ENV: dev
              DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          run: echo "Environment $APP_ENV using $DB_PASSWORD "
+          run: echo "Environment $APP_ENV using $DB_PASSWORD, GLOBAL_APP_ENV, JOB_LEVEL_ENV "

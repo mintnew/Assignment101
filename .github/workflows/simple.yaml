@@ -21,4 +21,4 @@ jobs:
           env:
              APP_ENV: dev
              DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          run: echo "Environment $APP_ENV using $DB_PASSWORD, GLOBAL_APP_ENV, JOB_LEVEL_ENV "
+          run: echo "Environment $APP_ENV using $DB_PASSWORD, $GLOBAL_APP_ENV, $JOB_LEVEL_ENV "
